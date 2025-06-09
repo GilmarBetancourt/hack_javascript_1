@@ -8,5 +8,6 @@
 let result = [];
 
 
+
 //export result
-module.exports = result;
+//module.exports = result;
