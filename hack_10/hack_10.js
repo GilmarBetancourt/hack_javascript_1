@@ -15,6 +15,14 @@
 let arr = ["foo","bar","baz","qux","echo","octo","cat","foobar","quux"];
 let result = [];
 
+arr.forEach(function(item, indice){
+   if(indice % 2 == 1){
+      result.push(item);
+   }
+});
+
+console.log(result);
+
 
 //export result
 module.exports = result;
