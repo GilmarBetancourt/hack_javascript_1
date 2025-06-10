@@ -9,6 +9,11 @@
 let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
 
+result = arr.map(function(item){
+    return item = item[0].toUpperCase() + item.substring(1);
+})
+
+console.log(result);
 
 //export result
 module.exports = result;

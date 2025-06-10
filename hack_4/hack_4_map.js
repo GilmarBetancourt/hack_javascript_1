@@ -7,7 +7,22 @@
  */
 let result = [];
 
+let fullResult = [];
 
+for(i=1; i<5; i++){
+    fullResult.push(i);
+}
+
+result = fullResult.map(function(numero, indice){
+    if(indice!=0){
+       return numero=numero+indice;
+    } else{
+        return numero;
+    }
+
+})
+
+console.log(result);
 
 //export result
-//module.exports = result;
+module.exports = result;

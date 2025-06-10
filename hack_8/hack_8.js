@@ -11,6 +11,19 @@
 let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
 
+arr.splice(0,1);
+arr.splice(-1,1);
+
+result = arr.map(function(item, indice){
+    if(indice!=2){
+        return item = item.replace("a", "@");
+    } else{
+        return item.toUpperCase();
+    }
+})
+
+console.log(result);
+
 
 //export result
 module.exports = result;
